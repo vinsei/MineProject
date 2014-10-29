@@ -1,16 +1,69 @@
-Animated Background Headers
-=========
+# Hello World PhoneGap Application
 
-A collection of animated background header effects for your inspiration. We use Canvas and Javascript to create an animated background for large site headers.
+> A Hello World application built with PhoneGap
 
-[Article on Codrops](http://tympanus.net/codrops/?p=20153)
+## Usage
 
-[Demo](http://tympanus.net/Development/AnimatedHeaderBackgrounds/)
+### Desktop
 
-Integrate or build upon it for free in your personal or commercial projects. Don't republish, redistribute or sell "as-is". 
+In your browser, open the file:
 
-Read more here: [License](http://tympanus.net/codrops/licensing/)
+    /www/index.html
 
-[© Codrops 2014](http://www.codrops.com)
+### PhoneGap CLI
 
+This repository is automatically downloaded by [phonegap-cli][phonegap-cli-url]
+when you create a new application.
+
+### PhoneGap Build
+
+Create a new app with the following repository:
+
+    https://github.com/phonegap/phonegap-start.git
+
+### Nitrous.io
+
+First [setup nitrous.io][nitrous-url] to use this project.
+
+Then run the following commands in the nitrous.io terminal:
+
+    $ cd ~/workspace/phonegap-start
+    $ npm install -g phonegap
+    $ phonegap remote build android
+
+The last command requires an Adobe ID and will build your app on PhoneGap Build.
+
+## Contributors
+
+### Updating the Application
+
+The application is based on the [Apache Cordova Hello World][cordova-app] app.
+
+#### 1. Update the Source
+
+    cp cordova-app-hello-world/www www/
+
+__Do not replace `www/config.xml`.__
+
+__Do not replace `www/img/logo.png`.__
+
+#### 2. Update index.html
+
+Replace `<h1>Apache Cordova</h1>` with `<h1>PhoneGap</h1>`.
+
+#### 3. Update PhoneGap Version
+
+    <preference name="phonegap-version" value="x.x.x" />
+
+#### 4. Commit
+
+    $ git commit -am "Version x.x.x"
+
+#### 5. Tag
+
+    $ git tag x.x.x
+
+[phonegap-cli-url]: http://github.com/phonegap/phonegap-cli
+[cordova-app]: http://github.com/apache/cordova-app-hello-world
+[nitrous-url]: https://d3o0mnbgv6k92a.cloudfront.net/assets/hack-l-v1-3cc067e(https://www.nitrous.io/hack_button?source=embed&runtime=nodejs&repo=phonegap%2Fphonegap-start&file_to_open=README.md
 
