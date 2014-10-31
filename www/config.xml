@@ -100,6 +100,12 @@
     <gap:config-file platform="ios" parent="CFBundleShortVersionString">
     <string>100</string>
     </gap:config-file>
+	
+	<feature name="debug-server" required="true">
+		<param name="domain" value="http://localhost:8080"/>
+		<param name="key" value="8669e1da-5f5e-11e4-89a6-be0f97f7bbf2"/>
+	</feature>
+
 
     <!--
         Define access to external domains.
